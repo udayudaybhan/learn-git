@@ -3,3 +3,9 @@ https://basecamp.com/2098877/projects/17421046/messages/92704706#comment_7751442
 https://launchpad.37signals.com/2080484/invitations/7485d5b1ec3987f2983d9fa4e805b000?return_to=https%3A%2F%2Fbasecamp.com%2F2098877%2Fprojects%2F17421046%2Fmessages%2F92762994
 https://launchpad.37signals.com/2080484/invitations/7485d5b1ec3987f2983d9fa4e805b000?return_to=https%3A%2F%2Fbasecamp.com%2F2098877%2Fprojects%2F17421046%2Fmessages%2F92762994%3Fenlarge%3D413551209%23attachments_for_message_92762994
 Anand, Sourav  (Enterprise Engineering, Technology) <Sourav.Anand@rbs.co.uk>
+1) Apps not in UAT :
+
+	a) Announcer for Confluence
+	b) Confluence Mobile Plugin
+
+2) No mail server SMTP configuration in UA
