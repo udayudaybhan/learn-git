@@ -7,3 +7,10 @@ Anand, Sourav  (Enterprise Engineering, Technology) <Sourav.Anand@rbs.co.uk>
 	b) Confluence Mobile Plugin
 
 2) No mail server SMTP configuration in UA
+
+INFO   | jvm 1    | 2020/09/17 09:30:25 | 2020-09-17 09:30:25,450 INFO [AgentRunnerThread] [AgentConfiguration] Setting UUID in main config file to '51961428-9e19-46b6-9158-9aced47f0da7'
+INFO   | jvm 1    | 2020/09/17 09:30:25 | 2020-09-17 09:30:25,470 INFO [AgentRunnerThread] [BambooActiveMQConnectionFactory] Setting broker URL to 'failover:(ssl://tools.rbspeople.com:54663?wireFormat.maxInactivityDuration=300000&socket.verifyHostName=false)?initialReconnectDelay=15000&maxReconnectAttempts=10'
+INFO   | jvm 1    | 2020/09/17 09:30:25 | 2020-09-17 09:30:25,474 INFO [AgentRunnerThread] [BambooActiveMQConnectionFactory] Broker URI: ssl://tools.rbspeople.com:54663?wireFormat.maxInactivityDuration=300000&socket.verifyHostName=false is valid.
+INFO   | jvm 1    | 2020/09/17 09:30:25 | 2020-09-17 09:30:25,518 INFO [AgentRunnerThread] [JmsSslManagementUtils] Generating a new key store...
+INFO   | jvm 1    | 2020/09/17 09:30:26 | 2020-09-17 09:30:26,389 INFO [AgentRunnerThread] [JmsSslManagementUtils] Saving key store for future use...
+
