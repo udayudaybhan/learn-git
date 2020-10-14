@@ -1,0 +1,15 @@
+#!/bin/bash
+# Use this for your user data (script without newlines)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd.x86_64
+systemctl start httpd.service
+systemctl enable httpd.service
+echo "Hello World from $(hostname -f)" > /var/www/html/index.html
+echo "Fusion Testing PATH from Host $(hostname -f) and Instance ID is $(curl -s http://169.254.169.254/latest/meta-data/in
+stance-id)" > /var/www/html/test.html
+cd /home/ec2-user/.ssh
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCEXXy4M2zGg3VDhk58hUyT56NuO5hIN64YnbsEMjP5UEAU40dXHmv+R93kRnhok1nDj0df/65IGnpz
+ja1W/30ebKUt2HzRULWVZ5RBY/xsrbJR2GNBcQaxGlDOfAEXGHr1+kbUjBLK//X/2CI52CzDSEonLKrD2cQ/BfpfMwqE3pGGSVxHFQu5zIVG5Qh7zdYAb9XCyV
+Gxg275/ttbAwNld5PAfS6J4aA8r1TDVGWOk2IQEuglUmtduAiU12Bba5+65j3JhrXxLoWm/DcsnxbLUO8Na9XLaOXiHuV9WPxDkY2K4gUoOOy+J1/b9HPYEGOm
+S/VCT0V6g73D0+n7Vlb7 fusion' >> authorized_keys
