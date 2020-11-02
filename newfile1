@@ -1,0 +1,3 @@
+https://rbsfuturetoolstest.spectrumhosting.net/bamboo/agentServer/agentInstaller/atlassian-bamboo-agent-installer-7.1.3.jar
+java -jar atlassian-bamboo-agent-installer-7.1.3.jar https://rbsfuturetoolstest.spectrumhosting.net/bamboo/agentServer/
+You may also add extra system properties like -Dbamboo.home=... to customize the agent's home location.
