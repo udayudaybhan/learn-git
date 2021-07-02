@@ -1,0 +1,88 @@
+Why IaaS?
+==========
+1- Repetability
+2- Auditability
+3- Change Control
+4- Collaboration
+
+lingo: Terminology :
+====================
+IaC - Infrastructure as a code
+CM - Configuration manager like Puppet, Ansible
+IaaS - Infrastructure as a Service   -- low level cloud provider.
+PaaS - Platform as a service - higher level of abstraction - like ECS, PCF, Horuku
+VCS - Version Control System like Git, Bitbucket
+CI/CD - Continuous Integration and Continuous delivery/deployement
+SDLC - Software Development Lifecycle
+Idempotence : 
+
+Approaches of IaC:
+==================
+Declarative - Code with What you want? - AWS cloud formation, Terraform, etc..
+				clear code with clear dependency.
+Imperative - How to get there with all steps. You may use AWS CLI with python/boto3
+
+SDLC :
+=======
+
+Requirements gathering and analysis ifra decisions-> Design like network, platform, OS selection -> \
+->Implementation writing the code -> Testing what we have implemented --> Deployement -- Maintenance
+
+Introducing Terraform :
+=====================
+
+What is Terraform :
+Command line tool, no GUI. Runs in Unix shells, powershells.
+Declarative infrastructure as code. We don't tell terraform to follow steps rather we code what we need.
+Terraform is a config{}.
+State{} - Terraform's view of world. Can be on desktop or remote backend
+Config <==> State   
+
+
+Install Terraform : 
+===================
+Easiest software package installation. 
+1- Goto terraform.io --> download section -- select OS --download -- unzip -> Move to bin or path -- boom you are done.
+
+2- Run in a docker image : hashicorp/terraform:latest
+
+Basics A tour of Terraform:
+===========================
+
+Terraform command has several subcommands but few we use.
+
+terraform init : download terraform providers plugin for individual cloud provider and modules references.
+
+terraform plan : compares the configuration with state file and creates a detailed plan what changes to make. Create a plan file.
+
+terraform apply : apply the changes so that state reflects the configuration.
+
+terraform destroy : destroy all resources which terraform has created.
+
+terraform fmt : format the configuration files. Convert tabs to spaces and change indentation.
+
+terraform import : if you have resources without terraform then you may use same.
+
+terraform output : display output in screen.
+
+terraform refresh : refresh state file 
+
+terraform taint : mark one resource which have to refresh at next run.
+
+terraform workspace : workplace is alternate version of different states. Run different stages of development at same code.
+
+terraform state : 
+
+
+Learn the basics : Hello terraform:
+===================================
+HCL : Hashicorp configuration language
+
+
+example : 
+
+provider "random" {}
+
+output "greetings" {
+    value = "Hello World 1"
+}
